@@ -1,0 +1,41 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type=text], button {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+#delete-completed-button {
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
