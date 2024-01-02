@@ -49,30 +49,5 @@ document.addEventListener('DOMContentLoaded', () => {
     createNewList();
 });
 
- // Récepteur d'événements pour la création d'une nouvelle liste
-    document.getElementById('create-list-button').addEventListener('click', () => {
-        createNewListBasedOnExistingList();
-    });
-
-    // Fonction pour créer une nouvelle liste basée sur la liste existante
-    function createNewListBasedOnExistingList() {
-        // Sélectionnez la liste existante à partir du localStorage
-        const existingList = JSON.parse(localStorage.getItem('tasks')) || [];
-
-        // Vérifiez si la liste existante est vide
-        if (existingList.length === 0) {
-            alert('La liste existante est vide. Ajoutez des tâches avant de créer une nouvelle liste.');
-            return;
-        }
-
-        // Dupliquez la liste existante pour créer une nouvelle liste
-        const newList = [...existingList];
-
-        // Enregistrez la nouvelle liste dans le stockage local (vous pouvez utiliser un nouveau nom ou le même, selon vos besoins)
-        localStorage.setItem('newList', JSON.stringify(newList));
-
-        // Vous pouvez également effectuer des actions supplémentaires ici, par exemple, mettre à jour l'interface utilisateur, etc.
-        alert('Nouvelle liste créée avec succès en se basant sur la liste existante!');
-    }
 });
 

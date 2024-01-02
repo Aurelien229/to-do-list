@@ -1,42 +1,105 @@
+$font-family1: 'Long Cang', cursive;
+$font-family2: 'Orbitron', sans-serif;
+
+@mixin media($screen) {
+  @media(max-width:$screen) {
+    @content;
+  }
+}
+
+$mobile: "475px";
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  background-image: url(asset/pacman.jpg);
+  font-family: $font-family2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #cde930;
+
+}
+
+header {
+  font-size: 300%;
+  text-align: center;
+  font-family: $font-family1;
+
+}
+
+#app {
+  background-color: #19194e;
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: -3px 19px 31px 1px #d7e930;
+  ;
+}
+
+input[type="text"],
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+ 
+}
+#submit-button{
+   background-color: transparent;
+   border: none;
+   
+   animation: 2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.3);
   }
-  
-  #app {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  perspective: 75px;
+
+}
+
+li {
+
+  margin-bottom: 8px;
+  transform: rotateX(24deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  animation: 2s ease-in-out;
+
+  &:hover {
+    text-decoration: underline dotted rgb(247, 247, 247);
   }
-  
-  input[type="text"], button {
-    margin-bottom: 10px;
-    padding: 8px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 8px;
-  }
-  
+
   .completed {
     text-decoration: line-through;
-    color: #777;
+    color: #e20b0b;
+
+
   }
-  
-  #delete-completed-button {
-    background-color: #ff5555;
-    color: #fff;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
+}
+
+#delete-completed-button {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  size: 500%;
+  cursor: pointer;
+}
+footer{ 
+  text-align: center;
+  animation: animate 1.5s linear infinite;
+} 
+ 
+@keyframes animate{
+  0%{
+    opacity: 0;
   }
-  
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
+}

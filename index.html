@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
- <script type="module" src="app.js"></script>
-
+  <script type="module" src="app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Orbitron&display=swap" rel="stylesheet">
   <title>To-Do List</title>
 </head>
+
 <body>
+  <header>
+    <h1>To-do-list</h1>
+    <h2>Aurélien</h2>
+  </header>
 
   <div id="app">
     <input type="text" id="new-task-input" placeholder="Chose à faire...">
-    <button id="submit-button">Enregistrer</button>
+    <button id="submit-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(210, 255, 9);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.898 5.515 5 6.934V22l5.34-4.005C17.697 17.852 22 14.32 22 10c0-4.411-4.486-8-10-8zm0 14h-.333L9 18v-2.417l-.641-.247C5.67 14.301 4 12.256 4 10c0-3.309 3.589-6 8-6s8 2.691 8 6-3.589 6-8 6z"></path><path d="M13 6h-2v3H8v2h3v3h2v-3h3V9h-3z"></path></svg></button>
 
     <ul id="task-list"></ul>
 
-    <button id="delete-completed-button">Mission accomplie :)</button>
+    <button id="delete-completed-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(210, 255, 9);transform: ;msFilter:;"><path d="M12 22c3.719 0 7.063-2.035 8.809-5.314L13 12l7.809-4.686C19.063 4.035 15.719 2 12 2 6.486 2 2 6.486 2 12s4.486 10 10 10zm-.5-16a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 11.5 6z"></path></svg></button>
   </div>
-  <button id="create-list-button">Créer une nouvelle liste</button>
-
-
-  <script type="module" src="app.js"></script>
+  
 </body>
+<footer>A ré@liser avant de mourrir...</footer>
+
 </html>
