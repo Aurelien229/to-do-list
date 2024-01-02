@@ -11,6 +11,7 @@ header {
   font-size: 300%;
   text-align: center;
   font-family: "Long Cang", cursive;
+  text-shadow: -10px 5px 5px red;
 }
 
 #app {
@@ -41,13 +42,10 @@ button {
 ul {
   list-style-type: none;
   padding: 0;
-  perspective: 75px;
 }
 
 li {
   margin-bottom: 8px;
-  transform: rotateX(24deg) rotateY(0deg);
-  transform-style: preserve-3d;
   animation: 2s ease-in-out;
 }
 li:hover {
@@ -60,15 +58,54 @@ li .completed {
 }
 
 #delete-completed-button {
+  margin-left: 50px;
   background-color: transparent;
   border: none;
   padding: 8px;
   size: 500%;
   cursor: pointer;
+  animation: myAnim 10s ease 0s 200 normal none;
 }
 
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(-48px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(-26px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(-13px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(-6.5px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(-4px);
+  }
+  25%, 55%, 75%, 87%, 98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 footer {
   text-align: center;
+  margin-top: 75px;
+  text-shadow: -10px 5px 5px red;
   animation: animate 1.5s linear infinite;
 }
 
