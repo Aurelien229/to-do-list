@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Récepteur d'événements pour marquer une tâche comme terminée
   document.getElementById('task-list').addEventListener('change', event => {
+    console.log('CHANGED',event)
     if (event.target.type === 'checkbox') {
       const taskId = parseInt(event.target.parentElement.getAttribute('data-id'));
       const task = tasks.find(task => task.id === taskId);
@@ -44,10 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Appeler deleteCompletedTasks après l'initialisation des tâches
   deleteCompletedTasks(tasks);
-  // Récepteur d'événements pour la création d'une nouvelle liste
-  document.getElementById('create-list-button').addEventListener('click', () => {
-    createNewList();
-});
 
 });
+
+
 

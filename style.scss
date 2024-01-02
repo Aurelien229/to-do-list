@@ -1,11 +1,11 @@
 $font-family1: 'Long Cang', cursive;
 $font-family2: 'Orbitron', sans-serif;
 
-@mixin media($screen) {
-  @media(max-width:$screen) {
-    @content;
-  }
-}
+// @mixin media($screen) {
+//   @media(max-width:$screen) {
+//     @content;
+//   }
+// }
 
 $mobile: "475px";
 
