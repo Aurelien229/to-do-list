@@ -20,13 +20,33 @@
 
   <div id="app">
     <input type="text" id="new-task-input" placeholder="Chose à faire...">
-    <button id="submit-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(210, 255, 9);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.898 5.515 5 6.934V22l5.34-4.005C17.697 17.852 22 14.32 22 10c0-4.411-4.486-8-10-8zm0 14h-.333L9 18v-2.417l-.641-.247C5.67 14.301 4 12.256 4 10c0-3.309 3.589-6 8-6s8 2.691 8 6-3.589 6-8 6z"></path><path d="M13 6h-2v3H8v2h3v3h2v-3h3V9h-3z"></path></svg></button>
+    <button id="submit-button">+</button>
 
     <ul id="task-list"></ul>
 
-    <button id="delete-completed-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(210, 255, 9);transform: ;msFilter:;"><path d="M12 22c3.719 0 7.063-2.035 8.809-5.314L13 12l7.809-4.686C19.063 4.035 15.719 2 12 2 6.486 2 2 6.486 2 12s4.486 10 10 10zm-.5-16a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 11.5 6z"></path></svg></button>
+    <div class="container-delete">
+      <button id="delete-completed-button"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+          viewBox="0 0 24 24" style="fill: rgb(210, 255, 9);">
+          <path
+            d="M12 22c3.719 0 7.063-2.035 8.809-5.314L13 12l7.809-4.686C19.063 4.035 15.719 2 12 2 6.486 2 2 6.486 2 12s4.486 10 10 10zm-.5-16a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 11.5 6z">
+          </path>
+        </svg></button>
+      <span id="text-pacman">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgb(255, 255, 255);">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path> &nbsp;
+        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgb(255, 255, 255);">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgb(255, 255, 255);">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+        </svg>
+      </span>
+      <p class="erase">to er@se</p>
+    </div>
   </div>
-  
+
 </body>
 <footer>"A ré@liser avant de mourrir..."</footer>
 
